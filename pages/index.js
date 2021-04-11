@@ -3,11 +3,11 @@ const htmlStr = `
 
 <h2>页面地址</h2>
 
-<p>https://webhook3.vercel.app/</p>
+<p>https://webhook.kaokei.com/</p>
 
 <h2>接口服务地址</h2>
 
-<p>https://webhook3.vercel.app/api/dingding/sentry</p>
+<p>https://webhook.kaokei.com/api/dingding/sentry</p>
 
 <h2>使用方式</h2>
 
@@ -17,7 +17,7 @@ const htmlStr = `
 
 <p>https://oapi.dingtalk.com/robot/send?access_token=1111122222223333334444445555566667777888899900011122233344455566</p>
 
-<p>第二步，拼接参数到<code>https://webhook3.vercel.app/api/dingding/sentry</code>这个链接</p>
+<p>第二步，拼接参数到<code>https://webhook.kaokei.com/api/dingding/sentry</code>这个链接</p>
 
 <p>目前支持 4 个参数：</p>
 
@@ -25,7 +25,7 @@ const htmlStr = `
 
 <p>参考示例如下：</p>
 
-<p>https://webhook3.vercel.app/api/dingding/sentry?url=https%3A%2F%2Foapi.dingtalk.com%2Frobot%2Fsend%3Faccess_token%3D1111122222223333334444445555566667777888899900011122233344455566&amp;mobile=13911112222&amp;keyword=监控报警&amp;level=info&amp;level=error</p>
+<p>https://webhook.kaokei.com/api/dingding/sentry?url=https%3A%2F%2Foapi.dingtalk.com%2Frobot%2Fsend%3Faccess_token%3D1111122222223333334444445555566667777888899900011122233344455566&amp;mobile=13911112222&amp;keyword=监控报警&amp;level=info&amp;level=error</p>
 
 <h2>部署到 vercel.app</h2>
 
