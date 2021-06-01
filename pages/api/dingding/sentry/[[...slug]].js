@@ -46,7 +46,8 @@ export default async function handler(req, res) {
       msgtype: "markdown",
       markdown: {
         title: data.message,
-        text: markdownText,
+        content: markdownText,
+        mentioned_list: ["@all"]
       },
       at: {
         atMobiles: [mobile],
