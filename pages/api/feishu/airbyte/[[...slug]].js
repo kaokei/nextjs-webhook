@@ -14,9 +14,14 @@ function getData(req) {
   var data = req.body || {};
   var keyword = req.query.keyword || "监控报警";
 
-  const str = JSON.stringify(data);
+  let str = '';
+  if(data && data.text) {
+    str = data.text;
+  } else {
+    str = JSON.stringify(data);
+  }
 
-  const res = { msg_type: "text", content: { text: keyword + ": " + str } };
+  const res = { msg_type: "text", content: { text: keyword + "\n" + str } };
 
   return res;
 }
