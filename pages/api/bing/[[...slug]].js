@@ -5,7 +5,8 @@ export default async function handler(req, res) {
     const image = req.query.image || "";
     const result = await axios.get('https://cn.bing.com/hp/api/model');
     if (image) {
-      let url = result.data.MediaContents[0];
+      const item0 = result.data.MediaContents[0];
+      let url = item0.ImageContent.Image.Url;
       if(url.indexOf('http') !== 0) {
         url = 'https://cn.bing.com' + url;
       }
